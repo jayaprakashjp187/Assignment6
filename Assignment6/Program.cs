@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram\n3.primenumber program\n4.ReverseNumber");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
@@ -30,6 +30,16 @@
                     PrimeNumber k = new PrimeNumber();
                     k.checkingPrimeNumber(n);
                     break;
+                case 4:
+
+                    Console.WriteLine("welcome to the reverse program");
+                    Console.WriteLine("enter the number for checking either reverse or not");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    ReverseNumber j = new ReverseNumber();
+                    j.checkingReverseNumber(num);
+                    break;
+
+
             }
         }
     }
