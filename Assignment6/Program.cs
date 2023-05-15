@@ -21,6 +21,15 @@
                     int perfectNumber=Convert.ToInt32(Console.ReadLine());
                     PerfectNumber.CheckingPerfectNumber(perfectNumber);
                     break;
+                case 3:
+                    Console.WriteLine("welcome to the prime number program");
+                   
+                    
+                    Console.WriteLine("enter the number checking whether the number is prime or not");
+                    int n = Convert.ToInt32(Console.ReadLine());
+                    PrimeNumber k = new PrimeNumber();
+                    k.checkingPrimeNumber(n);
+                    break;
             }
         }
     }
