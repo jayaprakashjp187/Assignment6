@@ -57,6 +57,24 @@
                     n = Convert.ToInt32(Console.ReadLine());
                     VendingMachine.Vmac(n);
                     break;
+                case 8:
+                  
+                    Console.WriteLine("Enter the date: ");
+                    int day = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Enter the month (in Number): ");
+                    int month = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Enter the year: ");
+                    int year = Convert.ToInt32(Console.ReadLine());
+
+                    int dayOfWeek = DayOfWeek.DayWeek(day, month, year);
+                    string[] days = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+                    string dayName = days[dayOfWeek]; 
+
+                    Console.WriteLine("The day of the week on the given date (" + day + "." + month + "." + year + ")  " + dayOfWeek + "  is " + dayName );
+                   
+                    break;
 
 
 
