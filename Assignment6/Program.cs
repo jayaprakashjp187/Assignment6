@@ -51,6 +51,14 @@
                     Console.WriteLine("welcome to the Stopwatch Program");
                     StopWatch.CheckingStopWatch();
                     break;
+                case 7:
+                    Console.WriteLine("welcome to the Vending Machine program");
+                    Console.WriteLine("Enter hoe much amount of change u want");
+                    n = Convert.ToInt32(Console.ReadLine());
+                    VendingMachine.Vmac(n);
+                    break;
+
+
 
 
 
