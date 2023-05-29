@@ -38,6 +38,15 @@
                     ReverseNumber j = new ReverseNumber();
                     j.checkingReverseNumber(num);
                     break;
+                case 5:
+                    Console.WriteLine("welcome to the coupon code program");
+                    Console.WriteLine("Enter How many Distinct Coupons u want ");
+                    
+                    int DistinctCoupon = Convert.ToInt32(Console.ReadLine());
+                    Coupon.coup(DistinctCoupon);
+                   
+
+                   break;
 
 
             }
