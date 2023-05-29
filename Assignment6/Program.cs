@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram\n3.primenumber program\n4.ReverseNumber");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram\n3.primenumber program\n4.ReverseNumber\n5.CouponNumber\n6.StopWatch");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
@@ -47,6 +47,14 @@
                    
 
                    break;
+                 case 6:
+                    Console.WriteLine("welcome to the Stopwatch Program");
+                    StopWatch.CheckingStopWatch();
+                    break;
+
+
+
+
 
 
             }
