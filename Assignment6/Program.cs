@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram\n3.primenumber program\n4.ReverseNumber\n5.CouponNumber\n6.StopWatch");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram\n3.primenumber program\n4.ReverseNumber\n5.CouponNumber\n6.StopWatch\n7.VendingMachineProgram\n8.findingweekwhichday" +
+                "\n9.temparature conversion program\n10.MonthleyPaymentProgram");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
@@ -75,6 +76,46 @@
                     Console.WriteLine("The day of the week on the given date (" + day + "." + month + "." + year + ")  " + dayOfWeek + "  is " + dayName );
                    
                     break;
+                case 9:
+                    Console.WriteLine("welcome to the Temparature Conversion program");
+                    Console.WriteLine("Please select Conversion From\n1.Celsius to Fahrenheit\n2.Fahrenheit to Celsius");
+                    n = Convert.ToInt32(Console.ReadLine());
+                    double temp;
+                    switch (n)
+                    {
+                        case 1:
+                            Console.WriteLine("You have selected\t1.\tCelsius to Fahrenheit\nPlease Enter the Temparature in Celisus:");
+                            temp = Convert.ToDouble(Console.ReadLine()); 
+                            Temparature.CelsiusToFahrenheit(temp);
+                            break;
+
+                        case 2:
+                            Console.WriteLine("You have selected\t2.\tFahrenheit to Celsius\nPlease Enter the Temparature in Fahrenheit:");
+                            temp = Convert.ToDouble(Console.ReadLine()); 
+                            Temparature.FahrenheitToCelsius(temp);
+                            break;
+
+                        default:
+                            Console.WriteLine("Please select a  1 or 2 ");
+                            break;
+                    }
+        
+                    break;
+                case 10:
+                    Console.WriteLine("welcome to the Monthly Payment program");
+                    Console.WriteLine("Enter the  years to pay of ");
+                    int a = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Enter the principal loan amount: ");
+                    int b = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Enter the  percent interest ");
+                    int c = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine( MonthleyPayment.CalculateMonthleyPayment(a, b, c));
+                    
+                    break;
+
 
 
 
