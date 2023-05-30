@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram\n3.primenumber program\n4.ReverseNumber\n5.CouponNumber\n6.StopWatch");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumberProgram\n3.primenumber program\n4.ReverseNumber\n5.CouponNumber\n6.StopWatch\n7.VendingMachine\n8.FindingDayWeek\n9.Temparature conversion");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
