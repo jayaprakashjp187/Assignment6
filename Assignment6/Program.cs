@@ -75,6 +75,31 @@
                     Console.WriteLine("The day of the week on the given date (" + day + "." + month + "." + year + ")  " + dayOfWeek + "  is " + dayName );
                    
                     break;
+                 case 9:
+                    Console.WriteLine("welcome to the Temparature Conversion program");
+                    Console.WriteLine("Please select Conversion From\n1.Celsius to Fahrenheit\n2.Fahrenheit to Celsius");
+                    n = Convert.ToInt32(Console.ReadLine());
+                    double temp;
+                    switch (n)
+                    {
+                        case 1:
+                            Console.WriteLine("You have selected\t1.\tCelsius to Fahrenheit\nPlease Enter the Temparature in Celisus:");
+                            temp = Convert.ToDouble(Console.ReadLine()); 
+                            Temparature.CelsiusToFahrenheit(temp);
+                            break;
+
+                        case 2:
+                            Console.WriteLine("You have selected\t2.\tFahrenheit to Celsius\nPlease Enter the Temparature in Fahrenheit:");
+                            temp = Convert.ToDouble(Console.ReadLine()); 
+                            Temparature.FahrenheitToCelsius(temp);
+                            break;
+
+                        default:
+                            Console.WriteLine("Please select a  1 or 2 ");
+                            break;
+                    }
+        
+                    break;
 
 
 
